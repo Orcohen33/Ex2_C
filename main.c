@@ -7,7 +7,7 @@ int main(){
 	scanf("%s",&_case);
 		if(_case=='A'){
 			create_matrix(arr);
-			
+			change_matrix_byAlgorithm(arr);
 		}
 		if(_case=='B'){
 		scanf("%d", &i);
@@ -20,6 +20,6 @@ int main(){
 		shortest_path(arr,i,j);
 		}
 	}
-	return 0;
+
 }
 
