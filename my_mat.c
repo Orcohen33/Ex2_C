@@ -9,20 +9,6 @@ int min(int x, int y){
 }
 
 
-void create_matrix(int arr[10][10]){
-int x ,check_input;
-  for(int i=0;i<10;i++){
-	for(int j=0;j<10;j++){
-		check_input=scanf("%d", &x);
-		if(check_input!=0){
-			arr[i][j] = x;
-		}else{
-			arr[i][j]=0;
-			}
-      		}
-	}
-}
-
 void change_matrix_byAlgorithm(int arr[10][10]) {
 	for (int k = 0;k < 10;k++) {
 		for (int i = 0;i < 10;i++) {
@@ -42,6 +28,21 @@ void change_matrix_byAlgorithm(int arr[10][10]) {
 			}
 		}
 	}
+}
+
+void create_matrix(int arr[10][10]){
+int x ,check_input;
+  for(int i=0;i<10;i++){
+	for(int j=0;j<10;j++){
+		check_input=scanf("%d", &x);
+		if(check_input!=0){
+			arr[i][j] = x;
+		}else{
+			arr[i][j]=0;
+			}
+      		}
+	}
+	change_matrix_byAlgorithm(arr);
 }
 
 
