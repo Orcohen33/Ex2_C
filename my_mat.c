@@ -47,9 +47,9 @@ void change_matrix_byAlgorithm(int arr[10][10]) {
 
 void there_is_a_route(int arr[10][10], int i, int j){
 	if(arr[i][j] != 0){
-	printf("True \n");}
+	printf("True\n");}
 	else {
-	printf("False \n");}
+	printf("False\n");}
 }
 
 void shortest_path(int arr[10][10], int i, int j){
