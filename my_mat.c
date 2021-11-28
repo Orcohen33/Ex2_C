@@ -8,7 +8,8 @@ int min(int x, int y){
    else return y;
 }
 
-
+//This fucntion represent Floyd Warshell algorithm
+//You can get a full explanation here: https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm
 void change_matrix_byAlgorithm(int arr[10][10]) {
 	for (int k = 0;k < 10;k++) {
 		for (int i = 0;i < 10;i++) {
@@ -30,6 +31,10 @@ void change_matrix_byAlgorithm(int arr[10][10]) {
 	}
 }
 
+//Create matrix by getting input from the user and fill the matrix with the values are entered.
+//By the end of this function we send the matrix that has been made to "floyd warshell algorithm",
+//and the explanation found above explain about this algorithm.
+//@Param = arr[][]
 void create_matrix(int arr[10][10]){
 int x ;
   for(int i=0;i<10;i++){
@@ -41,7 +46,8 @@ int x ;
 	change_matrix_byAlgorithm(arr);
 }
 
-
+//This function represent if there is a route between two vertex :
+//if there is a route return "True" else return "False"
 void there_is_a_route(int arr[10][10], int i, int j){
 	if(arr[i][j] != 0){
 	printf("True\n");}
@@ -49,6 +55,9 @@ void there_is_a_route(int arr[10][10], int i, int j){
 	printf("False\n");}
 }
 
+//This function represent the shortest path between 2 vertex:
+//if there is a shortest path it returns his sum edges num (By weight)
+//if there is no path it returns "-1"
 void shortest_path(int arr[10][10], int i, int j){
 	if(arr[i][j] != 0){
 	printf("%d\n",arr[i][j]);
